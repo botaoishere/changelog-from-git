@@ -7,7 +7,7 @@ Release day always ends the same way: someone scrolls `git log`, copies twelve s
 ## Install
 
 ```
-curl -O https://raw.githubusercontent.com/jamalishere/changelog-from-git/main/changelog_from_git.py
+curl -O https://raw.githubusercontent.com/botaoishere/changelog-from-git/main/changelog_from_git.py
 ```
 
 Python 3.8+. No dependencies. Copy it into your repo or keep it on your PATH.
