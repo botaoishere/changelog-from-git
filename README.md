@@ -1,16 +1,21 @@
 # changelog-from-git
 
-Turn your conventional commits into a real CHANGELOG.md, in one file of stdlib Python, with no config.
+**Turn conventional commits into a real CHANGELOG.md. One stdlib Python file, no config.**
 
-Release day always ends the same way: someone scrolls `git log`, copies twelve subjects into a markdown file, forgets the breaking change, and ships. The existing generators want a Node toolchain, a config file, and an opinion about how you version. This is one script you drop in a repo, run once, and read the diff of.
+<p align="center">
+  <img src="assets/demo.gif" alt="changelog-from-git demo" width="780">
+</p>
 
-## Install
+## Quickstart
 
 ```
-curl -O https://raw.githubusercontent.com/botaoishere/changelog-from-git/main/changelog_from_git.py
+curl -sO https://raw.githubusercontent.com/botaoishere/changelog-from-git/main/changelog_from_git.py
+python changelog_from_git.py --unreleased
 ```
 
 Python 3.8+. No dependencies. Copy it into your repo or keep it on your PATH.
+
+Release day always ends the same way: someone scrolls `git log`, copies twelve subjects into a markdown file, forgets the breaking change, and ships. The existing generators want a Node toolchain, a config file, and an opinion about how you version. This is one script you drop in a repo, run once, and read the diff of.
 
 ## Usage
 

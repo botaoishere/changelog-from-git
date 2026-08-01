@@ -1,0 +1,16 @@
+{
+  "title": "changelog-from-git",
+  "cols": 74,
+  "prompt": "$ ",
+  "prompt_color": "g",
+  "blocks": [
+    {
+      "cmd": "git log --oneline v0.3.0..HEAD",
+      "out": "<d>47cd58e feat!: drop python 3.7 support</d>\n<d>8905801 fix: crash on repos with zero tags</d>\n<d>793ce9c feat(parser): support scoped tags</d>"
+    },
+    {
+      "cmd": "python changelog_from_git.py --unreleased --title v0.4.0",
+      "out": "<b>## [v0.4.0] - 2026-08-01</b>\n\n<r>### :warning: Breaking changes</r>\n\n<r>- drop python 3.7 support</r> (`47cd58e`)\n\n<c>### Added</c>\n\n- <b>parser:</b> support scoped tags (`793ce9c`)\n\n<c>### Fixed</c>\n\n- crash on repos with zero tags (`8905801`)"
+    }
+  ]
+}
